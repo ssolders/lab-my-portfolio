@@ -1,12 +1,75 @@
 [
   {
-    "id": 0,
-    "name": "Framkant Media AB",
-    "description": "Det här jobbet varade i 2.5 år."
-  },      
+    "name": "Qasa - Blocket bostad",
+    "startDate": "04/2021",
+    "endDate": "06/2021",
+    "imageRelativeUrl": "static/generic1.jpg",
+    "description": "Simon deltog som utvecklare, tekniskt kunnig och coachande stöd till teamets två juniora utvecklare. Projektet som pågick i två månaders resulterade i en prototyp för Blocket bostads nya administrativa gränssnitt för bostadsuthyrning. I arbetet hjälpte Simon till i utvecklingsarbetet för att projektets snäva deadline skulle hållas samt assisterade med kodgranskning och diskussion gällande arkitekturen.",
+    "type": "contract",
+    "cases": [],
+    "tags": ["React", "Typescript", "GraphQL", "Styled Components", "Yarn"]
+  },
   {
-    "id": 1,
-    "name": "Mawell AB",
-    "description": "Det här jobbet var kanon"
+    "name": "Bambora",
+    "startDate": "08/2017",
+    "endDate": "08/2021",
+    "imageRelativeUrl": "static/generic2.jpg",
+    "description": "Simon hade en ledande roll i arkitekturen och utvecklingen kopplad till frontend i samband med att flera nya produkter togs fram. Simon ledde även frontend-teamets arbete, deltog i kontakt med kund tex inledande säljstöd, presentationer/demo eller deltog som teknisk kunnig vid möten.",
+    "type": "contract",
+    "cases": [
+      {
+        "name": "PaymentIQ Online Checkout/cashier",
+        "description": "Simon ledde frontendutvecklingen där målet var att ta fram en ny generisk och dynamisk Checkout/cashier tänkt att fungera för många olika typer av kunder och marknader. Simon deltog i projektet från start som teknisk projektledare, utvecklare och ansvarade för prototypens design och UX. Produkten skrevs i VueJS och VanillaJS + Typescript och integrerade mot PaymentIQ-plattformen. De stora utmaningarna i projektet var att erbjuda en webbapplikation vars funktionalitet och utseende kunde konfigureras on-the-fly av kunderna själva samtidigt som den behövde vara mycket lättviktig. Ett av kraven var även att erbjuda kunderna ett API till applikationen för att själva kunna styra flödet av data in och ut samt under körning. Simon ansvarade också för att checkouten integrerades i e-handelsplattformen WooCommerce Checkouten via ett plugin skrivet i PHP. Checkouten körs idag av en första pilotkund i Norge i produktion.",
+        "tags": ["Typescript", "VueJS", "Javascript", "Project lead", "Design", "UX", "PHP", "Ecommerce"]
+      },
+      {
+        "name": "PaymentIQ Backoffice",
+        "description": "2021 började arbetet med att skriva om det administrativa verktyget som används av både interna medarbetare och externa kunder. Projektet skrevs i React, Redux, Typescript och Styled components. En stor utmaning i projektet var att hitta ett sätt att under projektets gång gradvis släppa in användarna i det nya systemet, samtidigt som det gamla hölls tillgängligt. Med bakgrund av detta byggdes en ny applikation som iframade in den gamla, varvid teamet sedan ersatte vy för vy samtidigt som man hela tiden enkelt kunde växla tillbaka till det gamla.",
+        "tags": ["React", "Redux", "Typescript", "Project lead", "Design", "UX"]
+      },
+      {
+        "name": "Komponentbibliotek",
+        "description": "Simon byggde upp ett komponents-bibliotek skrivet i VueJS enligt Bamboras grafiska profil. De publicerades som npm-paket på Bamboras privata npm registry. Komponenterna används och delas av flera av Bamboras produkter.",
+        "tags": ["VueJS", "Design", "UX"]
+      }
+    ],
+    "tags": []
+  },
+  {
+    "name": "Devcode",
+    "startDate": "02/2015",
+    "endDate":  null,
+    "imageRelativeUrl": "static/generic3.jpg",
+    "description": "Simon tar stort ansvar på DevCode och har två förtroendeposter.",
+    "type": "employment",
+    "cases": [
+      {
+        "name": "Team Lead Frontend",
+        "description": "Simon samlar frontend-kollegorna regelbundet för att stärka samhörigheten ytterligare bland dem. Tillsammans planerar de konferensaktiviteter och delar kunskap med varandra.",
+        "tags": []
+      },
+      {
+        "name": "Komponentbibliotek",
+        "description": "Simon har ansvaret för att coacha juniora konsulter på DevCode. Förutom det ingår intervjuer och strategiskt arbete för att utveckla DevCode.",
+        "tags": []
+      }
+    ],
+    "tags": ["Ledarskap", "Arbetsledning"]
+  },
+  {
+    "name": "Inovia/Ericsson",
+    "startDate": "09/2015",
+    "endDate": "07/2017",
+    "imageRelativeUrl": "static/generic4.jpg",
+    "description": "Simon hade en ledande roll i arkitekturen och utvecklingen kopplad till frontend i samband med att Inovias administrativa verktyg Insight skrevs om till moderna webbtekniker.",
+    "type": "contract",
+    "cases": [
+      {
+        "name": "Insight",
+        "description": "Insight är ett lagrings- och analysverktyg för big data. Ericsson, Insights storkund, använder verktyget för att analysera och monitorera kundernas datatrafik som passerar genom deras basstationer. På ett enkelt sätt kan användarna plocka ut just den data de är intresserade av för att sedan visualisera och jämföra denna i applikationen.",
+        "tags": ["React", "Redux", "Design", "Telecom"]
+      }
+    ],
+    "tags": []
   }
 ]

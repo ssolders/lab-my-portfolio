@@ -1,5 +1,6 @@
 
 <script>
+    import ProjectItem from './../../components/ProjectItem.svelte';
     export let project;
 </script>
 
@@ -7,5 +8,4 @@
   <title>{project.name}</title>
 </svelte:head>
 
-<h1>{project.name}</h1>
-<p>{project.description}</p>
+<ProjectItem name={project.name} description={project.description} />

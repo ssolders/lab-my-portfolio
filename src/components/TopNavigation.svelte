@@ -1,23 +1,41 @@
-<ul class='mpl-main-nav'>
-    <li>
-        <a href='/'>Home</a>
-    </li>
-    <li>
-        <a href='/projects'>Projects</a>
-    </li>
-    <li>
-        <a href='/admin'>Admin</a>
-    </li>
-    
-</ul>
+<script>
+import { onMount } from 'svelte';
+
+const routes = [
+    { path: '/', displayName: 'Home' },
+    { path: '/projects', displayName: 'Projekt' },
+    { path: '/admin', displayName: 'Admin' },
+];
+
+let activeRoute = null
+
+onMount(() => {
+    activeRoute = location.pathname;
+});
+</script>
+
+<div class='mpl-main-nav-wrapper'>
+    <ul class='mpl-main-nav'>
+        {#each routes as route}
+            <li class={`mpl-main-nav-item ${activeRoute === route.path && 'mpl-main-nav-item--active'}`}>
+                <a href={route.path}>{route.displayName}</a>
+            </li>
+        {/each}
+    </ul>
+</div>
 
 <style>
+    .mpl-main-nav-wrapper {
+        background-color: #333333;
+        font-family: Arial, Helvetica, sans-serif;
+    }
     .mpl-main-nav {
         list-style-type: none;
         margin: 0;
         padding: 0;
         overflow: hidden;
-        background-color: #333333;
+        width: 1200px;
+        margin: 0 auto;
     }
 
     li {
@@ -32,7 +50,7 @@
         text-decoration: none;
         }
 
-        li a:hover {
+        .mpl-main-nav-item--active, .mpl-main-nav-item a:hover {
         background-color: #111111;
         }
 

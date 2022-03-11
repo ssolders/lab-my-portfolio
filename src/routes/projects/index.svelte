@@ -1,33 +1,46 @@
 
 <script>
-    import TopNavigation from '../../components/TopNavigation.svelte';
+  import ProjectListItem from "./../../components/ProjectListItem.svelte";
 
-    export let projects;
-
-    console.log('1');
-    console.log(projects);
+  export let projects;
 </script>
 
 <svelte:head>
   <title>Projects</title>
 </svelte:head>
 
-<h1>Projects</h1>
-<p>This is a page about projects</p>
+<div class='lmp-project-list-wrapper'>
+  <h2>Projekt/tidigare anställningar</h2>
 
-<div class='lmp-projects-container'>
-  {#each projects as project}
-    <div class='lmp-project-item'>    
-      <a href={`/project/${project.name}`}>
-        <h2>{project.name}</h2>
-      </a>
-    </div>
-  {/each}
+  <div class='lmp-projects-list-container'>
+    {#each projects as project}
+      <ProjectListItem project={project} />
+    {/each}
+  </div>
 </div>
 
 <style>
-  .lmp-projects-container {
-  
+  :root {
+    --base-margin: 8px;
+    --base-margin2: 16px;
+    --base-margin3: 24px;
+    --base-margin4: 32px;
+    --font: 
+  }
+
+  .lmp-project-list-wrapper {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0 var(--base-margin3);
+    margin: 0 auto;
+  }
+  .lmp-projects-list-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
 </style>
